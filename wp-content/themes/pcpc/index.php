@@ -48,7 +48,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 </div>
 
 <div class="two-folds">
-    <div class="two-folds__item two-folds__item--about" style="background-image: url('images');">
+    <div class="two-folds__item two-folds__item--about" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg-home-about.jpg');">
         <div class="two-folds__item__wrap">
             <div class="two-folds__item__content copy">
                 <h2 class="h3 t-heading"><?php the_field('section_left_title2_home', 'option'); ?></h2>
@@ -56,7 +56,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <a href="<?php the_field('section_left_link2_home', 'option'); ?>" class="button button--secondary">Learn More</a></div>
         </div>
     </div>
-    <div class="two-folds__item two-folds__item--purpose">
+    <div class="two-folds__item two-folds__item--purpose" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg-home-purposes.jpg');">
         <div class="two-folds__item__wrap">
             <div class="two-folds__item__content copy">
                 <h2 class="h3 t-heading"><?php the_field('section_right_title2_home', 'option'); ?></h2>

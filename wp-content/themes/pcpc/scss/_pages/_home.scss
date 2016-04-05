@@ -234,6 +234,18 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1abc9c;
+    opacity: 0.6;
+  }
 }
 
 .two-folds__item__wrap {
@@ -252,6 +264,8 @@
   padding-bottom: 230px;
   width: 520px;
   color: #fff;
+  position: relative;
+  z-index: 1;
 
   .button {
     margin-top: 25px;
@@ -261,13 +275,21 @@
 
 .two-folds__item--purpose {
   background-color: #e74c3c;
-  background-image: url('#{$imagePath}/bg-purpose.jpg');
   background-repeat: no-repeat;
   background-position: right center;
+  overflow: hidden;
+
+  &:before {
+    background-color: #e74c3c;
+  }
 
   .two-folds__item__content {
     float: left;
     padding-left: 70px;
+  }
+
+  .two-folds__item__wrap {
+    float: left;
   }
 
   .button {
@@ -501,6 +523,7 @@
       content: '';
       position: absolute;
       left: 0;
+      z-index: 1;
       top: -150px;
       width: 100%;
       height: 250px;

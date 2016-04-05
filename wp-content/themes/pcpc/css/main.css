@@ -1098,7 +1098,17 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   display: table;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
+  .two-folds__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1abc9c;
+    opacity: 0.6; }
 
 .two-folds__item__wrap {
   display: table-cell;
@@ -1114,19 +1124,25 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   padding-top: 250px;
   padding-bottom: 230px;
   width: 520px;
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  z-index: 1; }
   .two-folds__item__content .button {
     margin-top: 25px;
     color: #1abc9c; }
 
 .two-folds__item--purpose {
   background-color: #e74c3c;
-  background-image: url("../images/bg-purpose.jpg");
   background-repeat: no-repeat;
-  background-position: right center; }
+  background-position: right center;
+  overflow: hidden; }
+  .two-folds__item--purpose:before {
+    background-color: #e74c3c; }
   .two-folds__item--purpose .two-folds__item__content {
     float: left;
     padding-left: 70px; }
+  .two-folds__item--purpose .two-folds__item__wrap {
+    float: left; }
   .two-folds__item--purpose .button {
     color: #e74c3c; }
 
@@ -1304,6 +1320,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   content: '';
   position: absolute;
   left: 0;
+  z-index: 1;
   top: -150px;
   width: 100%;
   height: 250px;
