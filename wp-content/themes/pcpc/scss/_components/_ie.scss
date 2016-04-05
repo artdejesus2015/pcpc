@@ -1,0 +1,254 @@
+// ==================================================================================
+// Internet Explorer Fixes
+// ==================================================================================
+
+.ie {
+  .button--mute {
+    padding: 12px 45px;
+    border: 2px solid #fff;
+  }
+
+  .menu__item--active {
+    a {
+      behavior: url(PIE.htc);
+      zoom: 1;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60FFFFFF, endColorstr=#60FFFFFF);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#60FFFFFF, endColorstr=#60FFFFFF)";
+    }
+  }
+  .introduction {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .banner {
+    background-image: url('#{$imagePath}/bg-masthead-ie.jpg');
+    -ms-behavior: url(backgroundsize.min.htc);
+    behavior: url(backgroundsize.min.htc);
+  }
+
+  .button {
+    behavior: url(PIE.htc);
+  }
+  
+  .two-folds__item__content {
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+  
+  .leadership {
+    padding-top: 80px;
+  }
+
+  .two-folds {
+    .button {
+      position: relative;
+    }
+  }
+
+  .mission {
+    top: -50px;
+    padding-bottom: 120px;
+
+    .button {
+      position: relative;
+    }
+  }
+
+  .testimonials--masthead {
+    top: 0;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 210px;
+    
+    .t-heading {
+      font-size: 54px;
+    }
+  }
+  
+  .newsletter {
+    margin-top: 40px;
+    padding-bottom: 100px;
+    background-color: #e25344;
+  }
+
+  .possibilities__bars {
+    top: -80px;
+  }
+
+  .possibilities__icon {
+    span {
+      width: 50px;
+      height: 100px;
+    }
+  }
+
+  .testimonials__image--xs {
+    top: 500px;
+    left: 60%;
+  }
+
+  .testimonials__image--small {
+    left: 35%;
+  }
+
+  .l-footer {
+    margin-top: 30px;
+  }
+
+  .menu--secondary {
+    margin-top: 55px;
+  }
+}
+
+.ie-message {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+
+  .bg {
+    position: absolute;
+    top: -19px;
+    width: 100%;
+    height: 18px;
+    background-image: url('#{$imagePath}/bg-ie-shadow.png');
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+// IE 7
+
+.ie7 {
+  .possibilities--caption {
+    width: 55%;
+  }
+
+  .possibilities--video {
+    float: right;
+    width: 40%;
+  }
+
+  .two-folds {
+    top: -170px;
+  }
+  
+  .two-folds__item {
+    width: 49.9%;
+  }
+
+  .two-folds__item--about {
+    background-color: #1abc9c;
+  }
+
+  .two-folds__item--purpose {
+    .two-folds__item__wrap {
+      float: left;
+    }
+  }
+
+  .leadership {
+    padding-top: 40px;
+    padding-bottom: 0;
+    clear: both;
+  }
+  
+  .leadership__item {
+    width: 31%;
+  }
+
+  .mission {
+    top: -70px;
+  }
+}
+
+.ie9 {
+  .introduction {
+    padding: 3em 0;
+  }
+
+  .two-folds__item__content {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .leadership .l-wrap {
+    top: 0;
+  }
+
+  .leadership {
+    padding-bottom: 5em;
+    padding-top: 3em;
+  }
+
+  .mission {
+    padding-top: 2em;
+  }
+
+  .testimonials--masthead {
+    top: 0;
+    padding: 5em 0 3em;
+  }
+
+  .possibilities__bars {
+    transform: skewY(0);
+  }
+  .newsletter {
+    margin-top: 2em;
+  }
+
+  .form--muted .form__control {
+    color: #fff !important;
+  }
+
+  .l-footer__separator {
+    display: none;
+  }
+
+  .newsletter__bars {
+    display: none;
+  }
+
+  .l-footer {
+    padding: 3em 0;
+  }
+
+  .introduction-sub {
+    padding-top: 4em !important;
+  }
+
+}
+
+.ie8 {
+  .mobile-menu {
+    display: none;
+  }
+  .banner .l-wrap {
+    top: 30%;
+  }
+  .banner__heading {
+    font-size: 80px;
+  }
+  .banner--sub {
+    height: 600px;
+  }
+
+  .l-wrap {
+    width: 1170px;
+  }
+
+}
+
+
+
+.IEbrowser {
+  .csstransitions .two-folds {
+    &:before {
+      height: 420px;
+    }
+  }
+}

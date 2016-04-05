@@ -1,0 +1,100 @@
+// ==================================================================================
+// Contact
+// ==================================================================================
+
+.section-title {
+  font-family: 'RobotoLight';
+  font-size: 32px;
+  color: #333333;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.form-control {
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  color: #333333;
+  display: block;
+  border: 2px solid #f1f1f1;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-wrapper {
+  text-align: left;
+
+  span.wpcf7-not-valid-tip {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 5px 0;
+  }
+
+  div.wpcf7-validation-errors {
+    color: #333;
+    font-size: 13px;
+  }
+
+}
+
+.button-contact {
+  font-family: 'RobotoMedium';
+  font-size: 22px;
+  padding: 20px 60px;
+  outline: none !important;
+}
+
+
+textarea.form-control {
+  min-height: 250px;
+}
+
+.content-touch {
+  text-align: left;
+
+  p {
+    font-family: 'RobotoLight';
+    font-size: 17px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+}
+
+.content-wrapper {
+  .description {
+    margin-bottom: 3em;
+  }
+}
+
+.row {
+  margin: 0 -15px;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.grid-contact {
+  p {
+    span{
+      font-family: 'RobotoMedium';
+      color: #333333;
+    }
+
+    a {
+      font-family: 'RobotoMedium';
+      color: #3280d3;
+    }
+  }
+}
+
+.content-wrapper-right {
+  padding-left: 20px;
+}

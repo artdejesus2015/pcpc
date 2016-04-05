@@ -1,0 +1,87 @@
+// ==================================================================================
+// Button
+// ==================================================================================
+
+.button {
+  display: inline-block;
+  padding: 14px 45px;
+  background-color: #f3b62a;
+  border: 2px solid #f3b62a;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-transition: all ease-in-out .3s;
+  
+  &:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 10px 0 #fff;
+    -moz-box-shadow: 0 0 10px 0 #fff;
+    box-shadow: 0 0 10px 0 #fff;
+  }
+}
+
+.button--secondary {
+  background-color: #fff;
+  color: #333;
+  border-color: #fff;
+}
+
+.button--mute {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.button--subscribe {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  top: 25px;
+  height: 50px;
+  outline: none;
+}
+
+button.button {
+  border: 0;
+  outline: none;
+}
+.space-bar-primary {
+  display: block;
+
+  &:before {
+    content: '';
+    background-color: #e5e5e5;
+    width: 30px;
+    height: 1px;
+    display: inline;
+    float: left;
+    margin-top: 18px;
+    margin-right: 10px;
+  }
+}
+
+.space-bar-primary-posibilities {
+  &:before {
+    margin-top: 17px;
+  }
+}
+
+
+.link-primary {
+  font-size: 18px;
+  color: #00b2ce;
+  display: block;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: button;
+}
+
+.button-orange {
+ &:hover {
+   -webkit-box-shadow: 0 0 10px 0 #f3b62a;
+   -moz-box-shadow: 0 0 10px 0 #f3b62a;
+   box-shadow: 0 0 10px 0 #f3b62a;
+ }
+}

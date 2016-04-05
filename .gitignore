@@ -1,0 +1,7 @@
+.git
+.idea
+wp-admin
+wp-content/plugins
+wp-content/themes/pcpc/.codekit-cache
+wp-content/themes/pcpc/.idea
+wp-includes

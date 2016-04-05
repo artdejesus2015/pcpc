@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<h1 id="contributingtosusy">Contributing to Susy</h1>
+
+<p>Susy exists because of people contributing
+ideas, code, issues, and sites.
+Have you built a <a href="http://susy.oddbird.net/sites-using-susy/">site using Susy</a>?
+<a href="https://github.com/ericam/susysite/tree/master/content/sites-using-susy.rst">Add it to the list</a>.</p>
+
+<h2 id="havingissues">Having issues?</h2>
+
+<p>First, try searching for similar questions/answers
+that are already online.
+If you don&#8217;t see anything,
+let us know.
+We&#8217;re always happy to help!</p>
+
+<p>If it looks like a bug,
+post it in the <a href="https://github.com/ericam/susy/issues">GitHub issue tracker</a>.
+If you&#8217;re just looking for advice
+on creative uses of Susy,
+maybe <a href="http://stackoverflow.com/questions/tagged/susy-sass">Stack Overflow</a>
+is the place for you.</p>
+
+<p>Don&#8217;t worry,
+we&#8217;ll field questions posted in either locations.
+Make sure you explain the context around your problem
+with code examples, screenshots,
+or other relevant details.
+Best if you can provide a simple code sample
+that recreates the bug consistently.
+The more you tell us,
+and the more specific you are,
+the better we can help.</p>
+
+<h2 id="haveanidea">Have an idea?</h2>
+
+<p>Susy wouldn&#8217;t exist in it&#8217;s current form,
+without the ideas and feature requests
+that people have sent in.
+If you want to do something,
+and don&#8217;t see a good way to do it,
+<a href="https://github.com/ericam/susy/issues">please tell us</a></p>
+
+<h2 id="fixabugortypo">Fix a bug or typo?</h2>
+
+<p>Thanks!
+Submit a pull request against the <code>master</code> branch,
+and we&#8217;ll take a look.
+If you think it might affect the tests,
+or change functionality in some way,
+see below.</p>
+
+<h2 id="codeanewfeature">Code a new feature?</h2>
+
+<p>We love getting pull requests from the community.
+If you have some code, please send us a pull request.
+It&#8217;s likely that we&#8217;ll ask for a few adjustments,
+but don&#8217;t take it personally —
+we often do that to each other as well.</p>
+
+<p>We use <a href="http://compass-style.org">Compass</a>
+and <a href="http://ericsuzanne.com/true">True</a> in development,
+managed through <a href="http://bundler.io/">bundler</a>,
+to test Susy and make sure everything is working properly.</p>
+
+<p>We wont merge a pull request that breaks the test,
+or adds a feature that is untested,
+but you are welcome to submit a work in progress,
+and we&#8217;ll help you sort out the details.
+We&#8217;ll also ask you to update the docs.</p>
+
+<p>When submitting a pull request, consider:
+- Make sure the tests are up to date and passing
+- Update the docs
+- Add your changes to the
+ <a href="https://github.com/ericam/susy/blob/master/docs/changelog.rst">changelog</a>.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>The docs are written as reStructuredText
+(<a href="http://docutils.sourceforge.net/rst.html">rst</a>),
+and built with <a href="http://sphinx-doc.org/">sphinx</a>.</p>
+
+<p>To build them locally:</p>
+
+<pre><code class="bash">cd docs
+pip install -r requirements.txt
+make html
+</code></pre>
+
+<p>The docs are built into the <code>_build</code> directory,
+as a static site you can open in your browser.</p>
+
+<h2 id="runningtests:">Running tests:</h2>
+
+<pre><code class="bash"># command line
+gem install bundler
+rake test
+</code></pre>
+
+<p>You can also run <code>compass watch</code> from the test directory
+if you want the tests running in the background while you work.</p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+// ==================================================================================
+// Forms
+// ==================================================================================
+
+.form--muted {
+  .form__group {
+    position: relative;
+  }
+
+  .form__control {
+    font-family: 'RobotoThin';
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 200px;
+    border: 0;
+    font-size: 48px;
+    color: #fff;
+    border-bottom: 1px solid #e66d60;
+    background-color: transparent;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: #fff;
+    }
+
+    &:-moz-placeholder {
+      color: #fff;
+    }
+
+    &::-moz-placeholder {
+      color: #fff;
+    }
+
+    &:-ms-input-placeholder {
+      color: #fff;
+    }
+  }
+}

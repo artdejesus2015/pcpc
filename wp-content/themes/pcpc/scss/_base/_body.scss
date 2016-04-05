@@ -1,0 +1,40 @@
+// ==================================================================================
+// Body
+// ==================================================================================
+
+body {
+  font-family: 'RobotoRegular',sans-serif;
+  line-height: 1.6;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #00b2ce;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background: #00b2ce;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #00b2ce;
+  color: #fff;
+  text-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
