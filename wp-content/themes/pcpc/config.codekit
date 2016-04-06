@@ -80,35 +80,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bg-home-about-min.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 582705,
-		"inputAbbreviatedPath": "\/images\/bg-home-about-min.jpg",
-		"outputAbbreviatedPath": "\/images\/bg-home-about-min.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/bg-home-about.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6.0843e+06,
+		"initialSize": 97002,
 		"inputAbbreviatedPath": "\/images\/bg-home-about.jpg",
 		"outputAbbreviatedPath": "\/images\/bg-home-about.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg-home-purposes-min.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 80292,
-		"inputAbbreviatedPath": "\/images\/bg-home-purposes-min.jpg",
-		"outputAbbreviatedPath": "\/images\/bg-home-purposes-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -119,7 +97,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 552187,
 		"inputAbbreviatedPath": "\/images\/bg-home-purposes.jpg",
-		"outputAbbreviatedPath": "\/images\/bg-home-purposes.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-home-purposes-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

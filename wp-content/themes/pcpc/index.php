@@ -69,7 +69,9 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     <div class="l-wrap">
         <div class="copy">
             <h2 class="t-heading"><?php the_field('section_title3_home', 'option'); ?></h2>
-            <?php the_field('section_description3', 'option'); ?>
+            <div class="description">
+                <?php the_field('section_description3', 'option'); ?>
+            </div>
         </div>
         <div class="leadership__list">
             <?php

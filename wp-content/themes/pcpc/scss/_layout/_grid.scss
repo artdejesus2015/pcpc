@@ -98,3 +98,33 @@
   }
 }
 
+.col-md-8, .col-md-4 {
+ float: left;
+}
+
+.col-md-8 {
+  width: 66.66666667%;
+}
+
+.col-md-4 {
+  width: 33.33333333%;
+}
+
+.column-introduction-sub  {
+  text-align: left !important;
+
+  .col-md-8 {
+    .content {
+      padding-right: 3em;
+    }
+  }
+
+  .column-img {
+    img {
+      border: 10px solid #fff;
+      box-shadow: 0 3px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+}

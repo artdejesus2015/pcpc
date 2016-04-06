@@ -147,6 +147,9 @@ h4, .h4 {
 .Dblock {
   display: block; }
 
+.pull-right {
+  float: right !important; }
+
 @font-face {
   font-family: 'RobotoRegular';
   src: url("../fonts/RobotoRegular.eot");
@@ -884,6 +887,25 @@ input[type="button"], input[type="submit"], input[type="reset"] {
       width: 500%;
       background-color: #cedbf4; }
 
+.col-md-8, .col-md-4 {
+  float: left; }
+
+.col-md-8 {
+  width: 66.66666667%; }
+
+.col-md-4 {
+  width: 33.33333333%; }
+
+.column-introduction-sub {
+  text-align: left !important; }
+  .column-introduction-sub .col-md-8 .content {
+    padding-right: 3em; }
+  .column-introduction-sub .column-img img {
+    border: 10px solid #fff;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 2em; }
+
 .l-wrap {
   width: 90%;
   max-width: 1170px;
@@ -902,7 +924,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 
 .introduction-sub {
   text-align: center;
-  padding: 1em 0 5em; }
+  padding: 2em 0 8em; }
   .introduction-sub .copy p {
     font-size: 21px; }
 
@@ -952,6 +974,8 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   .possibilities__box .t-heading {
     line-height: 1.4;
     transition: all .4s linear; }
+  .possibilities__box.is-triggered {
+    z-index: 3; }
 
 .possibilities__overlay {
   position: absolute;
@@ -1152,6 +1176,9 @@ input[type="button"], input[type="submit"], input[type="reset"] {
   text-align: center; }
   .leadership .l-wrap {
     position: relative; }
+  .leadership .description {
+    margin: 0 auto;
+    max-width: 1000px; }
 
 .leadership__list {
   max-width: 1030px;
@@ -1495,10 +1522,14 @@ textarea.form-control {
     font-family: 'RobotoLight';
     font-size: 17px;
     color: #333333;
-    margin-bottom: 10px; }
+    margin-bottom: 1em; }
+  .content-touch .row {
+    margin-bottom: 2em; }
+  .content-touch .description:last-child {
+    margin-bottom: 0; }
 
 .content-wrapper .description {
-  margin-bottom: 3em; }
+  margin-bottom: 2em; }
 
 .row {
   margin: 0 -15px; }
@@ -1515,9 +1546,9 @@ textarea.form-control {
   color: #3280d3; }
 
 .content-wrapper-right {
-  padding-left: 20px; }
+  padding-right: 20px; }
 
-.introduction-purpose .content {
+.introduction-purpose .content-w {
   text-align: left;
   max-width: 1000px; }
 
@@ -1966,7 +1997,20 @@ textarea.form-control {
     margin-right: 25px; }
 
   .two-folds__item--purpose .two-folds__item__content {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+
+  .copy ul {
+    padding-left: 2em; } }
+@media (max-width: 640px) {
+  .col-md-8, .col-md-4 {
+    float: none;
+    width: 100%; }
+
+  .pull-right {
+    float: none !important; }
+
+  .column-introduction-sub {
+    text-align: center !important; } }
 @media (max-width: 610px) {
   .mission__buttons .button {
     margin-bottom: 15px;

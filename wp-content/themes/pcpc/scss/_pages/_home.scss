@@ -44,6 +44,10 @@
     line-height: 1.4;
     transition: all .4s linear;
   }
+
+  &.is-triggered {
+    z-index: 3;
+  }
 }
 
 .possibilities__overlay {
@@ -308,6 +312,11 @@
 
   .l-wrap {
     position: relative;
+  }
+
+  .description {
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }
 

@@ -30,13 +30,35 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     </div>
 </div>
 
-<div class="introduction introduction-sub introduction-<?php echo $post_slug;?>">
+<div class="introduction introduction-sub <?php if(get_field('side_image')): ?>column-introduction-sub<?php endif; ?> introduction-<?php echo $post_slug;?>">
     <div class="l-wrap">
-        <div class="content content-w">
-            <div class="copy">
-                <?php the_content(); ?>
+
+        <?php if(get_field('side_image')): ?>
+        <div class="row">
+            <div class="col-md-4 pull-right">
+                <div class="column-img">
+                    <img src="<?php the_field('side_image'); ?>">
+                </div>
             </div>
+
+            <div class="col-md-8">
+                <div class="content">
+                    <div class="copy">
+                        <?php the_content(); ?>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+        <?php else: ?>
+            <div class="content content-w">
+                <div class="copy">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 <?php endwhile; else : ?>
