@@ -22,12 +22,9 @@ $bg_img = wp_get_attachment_image_src( get_post_thumbnail_id(11), 'full', false,
 
 <div class="introduction introduction-sub introduction-<?php echo $post_slug;?>">
     <div class="l-wrap">
-        <div class="column column-4 right-tagline">
-            <div class="grid-item">
-                <div class="grid-item-img grid-item-img-transparent">
-                    <p>With a legacy of XXX total years of service to PCPC, Pete Deison and Tommy Bain join the Board of Trustees in providing Biblical guidance and stewardship of the Foundation.
-                    </p>
-                </div>
+        <div class="leader-tagline">
+            <div class="copy">
+                <?php the_field('page_description_leadership', 11); ?>
             </div>
         </div>
         <div class="grid grid-leadership">
@@ -52,6 +49,5 @@ $bg_img = wp_get_attachment_image_src( get_post_thumbnail_id(11), 'full', false,
         </div>
     </div>
 </div>
-
 
 <?php get_footer(); ?>

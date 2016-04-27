@@ -29,34 +29,35 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             </div>
         </div>
         <div class="possibilities possibilities--video">
-            <div class="possibilities__bars"><span></span><span></span><span></span><span></span></div>
+            <div class="possibilities__bars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="possibilities__box">
-                <div class="possibilities__overlay"></div>
-                <h3 class="h4 t-heading"><?php the_field('video_title_home', 'option'); ?></h3><a href="javascript:;" class="video-trigger possibilities__icon"><span></span></a>
                 <div class="possibilities__links"><?php the_field('video_description', 'option'); ?></div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal">
-    <div class="modal__overlay">
-        <div class="modal__video">
-            <iframe src="<?php the_field('video_link_home', 'option'); ?>" width="100%" height="100%" frameborder="0" autoplay="1" id="modal-video"></iframe>
-        </div>
-    </div>
-</div>
-
 <div class="two-folds">
-    <div class="two-folds__item two-folds__item--about" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg-home-about.jpg');">
-        <div class="two-folds__item__wrap">
-            <div class="two-folds__item__content copy">
-                <h2 class="h3 t-heading"><?php the_field('section_left_title2_home', 'option'); ?></h2>
-                <?php the_field('section_left_description2_home', 'option'); ?>
-                <a href="<?php the_field('section_left_link2_home', 'option'); ?>" class="button button--secondary">Learn More</a></div>
-        </div>
-    </div>
-    <div class="two-folds__item two-folds__item--purpose" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/bg-home-purposes.jpg');">
+
+    <?php
+    $bannerleft_img = get_field('section_left_background2_home', 'option');
+    // thumbnail
+    $sizeleft = 'background-img';
+    $bannerleft_bg = $bannerleft_img['sizes'][ $sizeleft ];
+
+    $banneright_img = get_field('section_right_background', 'option');
+    // thumbnail
+    $sizeright = 'background-img';
+    $banneright_bg = $banneright_img['sizes'][ $sizeright ];
+
+    ?>
+
+    <div class="two-folds__item two-folds__item--about" style="background-image: url('<?php echo $banneright_bg; ?>');">
         <div class="two-folds__item__wrap">
             <div class="two-folds__item__content copy">
                 <h2 class="h3 t-heading"><?php the_field('section_right_title2_home', 'option'); ?></h2>
@@ -64,6 +65,16 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <a href="<?php the_field('section_right_link2_home', 'option'); ?>" class="button button--secondary">Learn More</a></div>
         </div>
     </div>
+
+    <div class="two-folds__item two-folds__item--purpose" style="background-image: url('<?php echo $bannerleft_bg; ?>');">
+        <div class="two-folds__item__wrap">
+            <div class="two-folds__item__content copy">
+                <h2 class="h3 t-heading"><?php the_field('section_left_title2_home', 'option'); ?></h2>
+                <?php the_field('section_left_description2_home', 'option'); ?>
+                <a href="<?php the_field('section_left_link2_home', 'option'); ?>" class="button button--secondary">Learn More</a></div>
+        </div>
+    </div>
+
 </div>
 <div class="leadership">
     <div class="l-wrap">
@@ -92,9 +103,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                         <div class="leadership__image" style="background-image: url('<?php echo $leader_img[0]; ?>');">
                         </div>
                         <h3 class="h4 t-heading leadership__title"><?php the_title(); ?></h3>
-                        <div class="leadership__content">
-                            <p><?php echo excerpt(16); ?></p>
-                        </div>
                     </a>
                 </div>
 
@@ -103,36 +111,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
         </div>
     </div>
 </div>
-    
-<!--<div class="mission">-->
-<!--    <div class="l-wrap">-->
-<!--        <div class="copy">-->
-<!--            <h2 class="t-heading">--><?php //the_field('section_title4', 'option'); ?><!--</h2>-->
-<!--            --><?php //the_field('section_description_4', 'option'); ?>
-<!--            <div class="mission__buttons">-->
-<!--                <a href="--><?php //the_field('button_link_1_home4', 'option'); ?><!--" class="button button--mute">--><?php //the_field('button_name_1_home4', 'option'); ?><!--</a>-->
-<!--                <a href="--><?php //the_field('button_link_2_home4', 'option'); ?><!--" class="button button--secondary">--><?php //the_field('button_name_2_home4', 'option'); ?><!--</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="testimonials testimonials--masthead">-->
-<!--    <div class="l-wrap">-->
-<!--        <div class="testimonials__figure">-->
-<!--            <img src=" --><?php //the_field('image_1_home5', 'option'); ?><!--" class="testimonials__image testimonials__image--main" />-->
-<!--            <img src=" --><?php //the_field('image_2_home5', 'option'); ?><!--" class="testimonials__image testimonials__image--small" />-->
-<!--            <img src=" --><?php //the_field('image_3_home5', 'option'); ?><!--" class="testimonials__image testimonials__image--xs"/>-->
-<!--        </div>-->
-<!--        <div class="testimonials__caption">-->
-<!--            <div class="copy copy--large">-->
-<!--                <h2 class="t-heading">--><?php //the_field('section_title5', 'option'); ?><!--</h2>-->
-<!--                <div class="testimonials__body copy--quote">-->
-<!--                    --><?php //the_field('section_description5', 'option'); ?>
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 <?php endwhile; else : ?>
 <?php endif; ?>

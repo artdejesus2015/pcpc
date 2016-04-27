@@ -21,18 +21,23 @@
 
 <div class="mobile-menu">
     <?php
-    $defaults = array(
-        'theme_location'  => 'primary',
-        'menu'            => 'Navigation Menu',
-        'menu_class'      => 'menu__root'
-    );
-    wp_nav_menu( $defaults ); ?>
+        $defaults = array(
+            'theme_location'  => 'primary',
+            'menu'            => 'Navigation Menu',
+            'menu_class'      => 'menu__root'
+        );
+        wp_nav_menu( $defaults );
+    ?>
 </div>
 
 <header class="l-header">
     <div class="l-wrap">
-        <a href="<?php bloginfo('siteurl'); ?>">
+        <a href="<?php bloginfo('siteurl'); ?>" class="white-logo">
             <div class="brand" style="background-image: url('<?php echo the_field('header_logo', 'option'); ?>');"></div><span class="brand__text">PCPC Foundation</span>
+        </a>
+
+        <a href="<?php bloginfo('siteurl'); ?>" class="blue-logo">
+            <div class="brand" style="background-image: url('<?php echo the_field('footer_logo', 'option'); ?>');"></div><span class="brand__text">PCPC Foundation</span>
         </a>
 
         <nav class="menu menu--primary">

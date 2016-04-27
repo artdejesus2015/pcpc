@@ -33,16 +33,37 @@
 .possibilities__box {
   position: relative;
   z-index: 2;
-  margin-top: 22em;
-  padding: 50px;
+  margin-top: 20em;
+  top: 13em;
+  padding: 95px 50px;
   background-color: #f3b62a;
-  box-shadow: 0 1px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
   color: #fff;
   text-align: center;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/pcpc-tower.png");
+    height: 290px;
+    width: 130px;
+  }
+
+  &:before {
+    left: 0;
+    bottom: -80%;
+  }
+
+  &:after {
+    right: 0;
+    bottom: 0;
+  }
   
   .t-heading {
     line-height: 1.4;
     transition: all .4s linear;
+    margin-bottom: 2em;
   }
 
   &.is-triggered {
@@ -149,17 +170,20 @@
 
 .possibilities__links {
   transition: all .4s .25s linear;
+  position: relative;
+  z-index: 1;
 
   a {
     display: block;
     text-decoration: none;
     font-family: 'RobotoItalic';
-    font-size: 20px;
+    font-size: 36px;
     color: #fff;
     text-decoration: none;
     
-    &:hover {
-      text-decoration: underline;
+    &:hover, &:focus {
+      text-decoration: none;
+      color: #F3F8FA;
     }
   }
 
@@ -217,7 +241,7 @@
 
 .two-folds {
   position: relative;
-  margin-top: -200px;
+  margin-top: 0;
   background-color: #1abc9c;
 
   .t-heading {
@@ -264,8 +288,8 @@
 .two-folds__item__content {
   margin-right: 40px;
   margin-left: auto;
-  padding-top: 250px;
-  padding-bottom: 230px;
+  padding-top: 200px;
+  padding-bottom: 192px;
   width: 520px;
   color: #fff;
   position: relative;
@@ -663,6 +687,21 @@
 }
 
 .copy_possibilities {
-  padding-bottom: 9em;
+  padding-bottom: 0;
   padding-right: 3em;
+}
+
+.copy-qoute-flip {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -50px;
+    background-image: url("../images/quote-flip.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
 }

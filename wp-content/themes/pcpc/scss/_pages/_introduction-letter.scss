@@ -2,8 +2,67 @@
 // Introduction Letter Page
 // ==================================================================================
 
-.introduction-introduction-letter {
-  .content-w {
-    max-width: 1000px;
+.introduction-letter {
+  .l-wrap {
+    max-width: 1045px;
   }
+  
+  .copy {
+    .letter-copy {
+      text-align: left;
+      margin-bottom: 30px;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .pl-63 {
+        padding-left: 63px;
+      }
+    }
+  }
+}
+
+
+.sidebar-letter {
+  .logo-wrap {
+    display: block;
+    text-align: center;
+    margin-bottom: 6em;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .sidebar-title, p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: #34657F;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-title {
+    font-style: italic;
+    margin-bottom: 10px;
+
+  }
+
+  .sidebar-group {
+    padding: 3em 0;
+    border-top: 2px solid #34657F;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+
+  .bar-bottom {
+    border-bottom: 4px solid #34657F;
+  }
+
+  .sidebar-list {
+    margin-bottom: 10px;
+  }
+
 }

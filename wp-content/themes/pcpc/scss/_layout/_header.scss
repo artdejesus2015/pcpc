@@ -156,4 +156,53 @@
 
 }
 
+.white-logo {
+  display: block;
+}
+
+.blue-logo {
+  display: none;
+}
+
+.nav-index {
+  .white-logo {
+    display: none;
+  }
+
+  .blue-logo {
+    display: block;
+  }
+
+  .brand {
+    width: 50px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu--primary {
+    margin-top: 15px;
+  }
+
+}
+
+.post-type-archive-leadership {
+  .menu--primary li.menu-item-24 {
+    a {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+  }
+
+  .nav-index .f-nav li.menu-item-24 {
+    a {
+      color: #fff;
+      background-color: #4B9CE1;
+    }
+  }
+
+  .mobile-menu .menu-navigation-menu-container .menu__root .menu-item-24 a {
+    background-color: #3CA3E3;
+  }
+}
 

@@ -1,6 +1,6 @@
 <div class="newsletter">
     <div class="l-wrap">
-        <h3>Sign up for our newsletter</h3>
+        <h3><?php the_field('news_letter_title', 'option'); ?></h3>
         <div class="form form--muted">
             <?php echo do_shortcode('[contact-form-7 id="55" title="News Letter"]'); ?>
         </div>
